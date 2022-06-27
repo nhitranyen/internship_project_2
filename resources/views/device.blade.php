@@ -174,24 +174,24 @@ Thiết bị
                                         @foreach($data as $item)
                                         <tr class="">
                                             <td class="text-center">KIO_0{{$item->id}}</td>
-                                            <td class="text-center">{{$item->device_name}}</td>
+                                            <td class="text-left">{{$item->device_name}}</td>
                                             <td class="text-center">{{$item->device_id}}</td>
                                             @if($item->device_status ==1)
-                                            <td class="text-center"><i class='bx bxs-circle text-success'></i> Đang
+                                            <td class="text-left"><i class='bx bxs-circle text-success'></i> Đang
                                                 hoạt động</td>
                                             @else
-                                            <td class="text-center"><i class='bx bxs-circle text-danger'></i> Ngưng
+                                            <td class="text-left"><i class='bx bxs-circle text-danger'></i> Ngưng
                                                 hoạt động</td>
                                             @endif
                                             @if($item->device_conection ==1)
-                                            <td class="text-center"><i class='bx bxs-circle text-success'></i> Đang
+                                            <td class="text-left"><i class='bx bxs-circle text-success'></i> Đang
                                                 kết nối</td>
                                             @else
-                                            <td class="text-center"><i class='bx bxs-circle text-danger'></i> Mất kết
+                                            <td class="text-left"><i class='bx bxs-circle text-danger'></i> Mất kết
                                                 nối</td>
                                             @endif
-                                            <td class="text-center">{{$item->device_title}}</td>
-                                            <td class="text-center"><a class="text-info"
+                                            <td class="text-left">{{$item->device_title}}</td>
+                                            <td class="text-left"><a class="text-info"
                                                 href="/chi-tiet/{{$item->id}}">Chi tiết</a></td>
                                             <td class="text-center"><a class="text-info"
                                                 href="/update-device/{{$item->id}}">Cập nhật</a></td>

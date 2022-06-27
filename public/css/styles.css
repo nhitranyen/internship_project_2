@@ -560,7 +560,7 @@ nav .profile-details .admin_hello {
 .search .bx-search {
   font-size: 25px;
   position: absolute;
-  right: 25px;
+  right: 125px;
   top: 44px;
   color: #FF9138;
 }
@@ -1181,8 +1181,12 @@ table td {
 }
 
 .date {
-  width: 150px !important;
+  width: 225px !important;
   height: 44px !important;
+}
+
+.date-icon{
+  font-size: 25px;
 }
 
 .service-form {
@@ -1318,7 +1322,7 @@ table td {
 }
 
 .number .date {
-  width: 161.82px !important;
+  width: 210px !important;
 }
 
 .number .dropdown-menu {

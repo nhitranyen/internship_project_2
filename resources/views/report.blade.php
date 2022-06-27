@@ -105,7 +105,7 @@ Lập báo cáo
     <div class="home-content" id="device">
         <div class="number">
             <div class="col-md-12 ">
-                <h3 class="text-primary" style="margin-bottom: 30px;">Danh sách báo cóa</h3>
+                <h3 class="text-primary" style="margin-bottom: 30px;">Danh sách báo cáo</h3>
                 <div class="row">
                     <div class="col-md-4" style="padding-bottom: 15px;">
                         <div class="row">
@@ -168,7 +168,7 @@ Lập báo cáo
                                         @foreach($data as $item)
                                         <tr class="">
                                             <td class="text-center">{{$item->number}}{{$item->id}}</td>
-                                            <td class="text-center">{{$item->number_service}}</td>
+                                            <td class="text-left">{{$item->number_service}}</td>
                                             <td class="text-center">{{$item->created_at}}</td>
                                             @if($item->number_status ==1)
                                             <td class="text-left"><i class='bx bxs-circle text-info'></i>Đang chờ</td>

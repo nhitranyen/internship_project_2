@@ -209,8 +209,8 @@ Quản lý cấp số
                                         @foreach($data as $item)
                                         <tr class="">
                                             <td class="text-center">{{$item->number}}{{$item->id}}</td>
-                                            <td class="text-center">{{$item->number_name}}</td>
-                                            <td class="text-center">{{$item->number_service}}</td>
+                                            <td class="text-left">{{$item->number_name}}</td>
+                                            <td class="text-left">{{$item->number_service}}</td>
                                             <td class="text-center">{{$item->created_at}}</td>
                                             <td class="text-center">{{$item->updated_at}}</td>
                                             @if($item->number_status ==1)

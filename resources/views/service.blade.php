@@ -125,12 +125,15 @@ Dịch vụ
                     <div class="col-md-4 p-0">
                         <div class="row">
                             <label for="inputEmail4" class="form-label col-md-12">Chọn thời gian</label>
-                            <div class="col-md-6">
+                            <div class="col-md-7 d-flex">
                                 <div class="form-group">
                                     <input type="date" class="form-control date" placeholder="Nhập từ khóa">
                                 </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" fill="currentColor" class="bi bi-caret-right-fill date-icon" viewBox="0 0 16 16">
+                                   <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                </svg>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <input type="date" class="form-control date" placeholder="Nhập từ khóa">
                                 </div>
@@ -162,7 +165,7 @@ Dịch vụ
                                         <tr class="">
                                             <th class="text-center">Mã dịch vụ</th>
                                             <th class="text-center">Tên dịch vụ</th>
-                                            <th class="text-center">Mô tả</th>
+                                            <th class="text-center" style="width:525.062px">Mô tả</th>
                                             <th class="text-center">Trạng thái hoạt động</th>
                                             <th class="text-center"><a href=""></a></th>
                                             <th class="text-center"><a href=""></a></th>
@@ -172,8 +175,8 @@ Dịch vụ
                                         @foreach($data as $item)
                                         <tr class="row100 body">
                                             <td class="text-center">{{$item->service_code}}</td>
-                                            <td class="text-center">{{$item->service_name}}</td>
-                                            <td class="text-center">{{$item->service_content}}</td>
+                                            <td class="text-left">{{$item->service_name}}</td>
+                                            <td class="text-left">{{$item->service_content}}</td>
                                             @if($item->service_status==1)
                                             <td class="text-center"><i class='bx bxs-circle text-success'></i> Đang
                                                 hoạt động</td>
@@ -196,37 +199,6 @@ Dịch vụ
                         </div>
                     </div>
                     <div class="col-md-12 d-flex justify-content-end" style="margin-top:10px ;">
-
-
-
-                        <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class='bx bxs-left-arrow text-secondary'></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link btn btn-primary" href="#">1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">4</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">5</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">...</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-secondary" href="#">10</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class='bx bxs-right-arrow text-secondary'></i></a>
-                                </li> -->
-
 
                     </div>
                 </div>

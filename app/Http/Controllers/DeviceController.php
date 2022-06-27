@@ -57,7 +57,7 @@ class DeviceController extends Controller
             'created_at'=>now(),
             'updated_at'=>now()            
     ]);
-    return redirect('/thiet-bi')->withSuccess('Thêm thành công');
+    return redirect('/device')->withSuccess('Thêm thành công');
     }
     public function detail($id){
         $data = DB::table('device')->where('id', $id)->first();
@@ -82,7 +82,7 @@ class DeviceController extends Controller
             'device_title'=>$request->device_title,
                    
     ]);
-    return redirect('/thiet-bi')->withSuccess('Cập nhật thành công');
+    return redirect('/device')->withSuccess('Cập nhật thành công');
     }
     public function device_active(){
         $data = device::where('device_status',1)->paginate(7);

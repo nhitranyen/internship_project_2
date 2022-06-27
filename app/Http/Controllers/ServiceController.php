@@ -34,7 +34,7 @@ class ServiceController extends Controller
             'service_Prefix'=>$request->service_Prefix,
             'service_Surfix'=>$request->service_Surfix,      
     ]);
-    return redirect('/dich-vu')->withSuccess('Thêm dịch vụ thành công');
+    return redirect('/service')->withSuccess('Thêm dịch vụ thành công');
     }
     public function service_active(){
         $data = service::where('service_status',1)->paginate(7);
@@ -64,6 +64,6 @@ class ServiceController extends Controller
             'service_Prefix'=>$request->service_Prefix,
             'service_Surfix'=>$request->service_Surfix,                 
         ]);
-        return redirect('/dich-vu')->withSuccess('Cập nhật dịch vụ thành công');
+        return redirect('/service')->withSuccess('Cập nhật dịch vụ thành công');
     }
 }

@@ -116,7 +116,7 @@ Thêm dịch vụ
                                             <label for="exampleInputEmail1">Mã dịch vụ: <span
                                                     class="text-danger">*</span> </label>
                                             <input name="service_code" type="text" class="form-control"
-                                                placeholder="Nhập tên thiết bị">
+                                                placeholder="Mã dịch vụ">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -124,7 +124,7 @@ Thêm dịch vụ
                                             <label for="exampleInputEmail1">Tên dịch vụ: <span
                                                     class="text-danger">*</span> </label>
                                             <input name="service_name" type="text" class="form-control"
-                                                placeholder="Nhập tên thiết bị">
+                                                placeholder="Nhập tên dịch vụ">
                                         </div>
                                     </div>
                                 </div>
